@@ -85,7 +85,8 @@
 }
 h2, p {
     text-align: center;
-    font-size: .9em
+    font-size: .9em;
+    margin-top: 20px;
 }
 svg{
     width: 50px;
@@ -97,7 +98,9 @@ svg{
     fill: var(--home-color)
 }
 .svg-learning{
-    fill: var(--learning-color)
+    display: block;
+    margin: auto;
+    width: 30%
 }
 .svg-admin{
     fill: var(--admin-color)
@@ -112,6 +115,9 @@ body{
 @media only screen and (max-width: 1024px) {
     .content{
         width: 150px;
+    }
+    h2, p {
+        margin-top: 5px;
     }
     .tr{
         margin-top: -10px;
@@ -138,5 +144,8 @@ body{
     }
     .bl{
         margin-left: 243px;
+    }
+    .svg-learning{
+        width: 20%
     }
 }
