@@ -1,0 +1,142 @@
+:root{
+    --home-color: rgb(50, 146, 202);
+    --learning-color: rgb(151, 35, 54);
+    --admin-color:  purple;
+    --blog-color:  yellow;
+}
+.home-color{
+    color: rgb(50, 146, 202);
+}
+
+.icon-holder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 20px;
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -12px
+}
+.shadow-home{
+    box-shadow: 0px -14px 0px 0px var(--home-color),
+        11px -5px 0px 0px var(--home-color),
+        8px 10px 0px 0px var(--home-color),
+        -7px 10px 0px 0px var(--home-color),
+        -11px -5px 0px 0px var(--home-color);}
+.shadow-learning{
+    box-shadow: 0px -14px 0px 0px var(--learning-color),
+        11px -5px 0px 0px var(--learning-color),
+        8px 10px 0px 0px var(--learning-color),
+        -7px 10px 0px 0px var(--learning-color),
+        -11px -5px 0px 0px var(--learning-color);
+}
+.shadow-admin{
+    box-shadow: 0px -14px 0px 0px var(--admin-color),
+        11px -5px 0px 0px var(--admin-color),
+        8px 10px 0px 0px var(--admin-color),
+        -7px 10px 0px 0px var(--admin-color),
+        -11px -5px 0px 0px var(--admin-color);
+} 
+.shadow-blog{
+    box-shadow: 0px -14px 0px 0px var(--blog-color),
+        11px -5px 0px 0px var(--blog-color),
+        8px 10px 0px 0px var(--blog-color),
+        -7px 10px 0px 0px var(--blog-color),
+        -11px -5px 0px 0px var(--blog-color);
+} 
+
+.tr{
+    margin-top: -10px;
+    margin-left: 198px;
+}
+.bl{
+    margin-top: 170px;
+    margin-left: 198px;
+}
+.br{
+    margin-top: 170px;
+    margin-left: -12px
+}
+.content-holder{
+    display: flex;
+}
+.content{
+    min-height: 170px;
+    width: 200px;
+    margin:  auto;
+    padding: 5px;
+}
+.home{
+    border: var(--home-color) 2px solid;
+}
+.learning{
+    border: var(--learning-color) 2px solid
+}
+.admin{
+    border: var(--admin-color) 2px solid
+}
+.blog{
+    border: var(--blog-color) 2px solid
+}
+h2, p {
+    text-align: center;
+    font-size: .9em
+}
+svg{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.svg-home{
+    fill: var(--home-color)
+}
+.svg-learning{
+    fill: var(--learning-color)
+}
+.svg-admin{
+    fill: var(--admin-color)
+}
+.svg-blog{
+    fill: var(--blog-color)
+}
+
+body{
+    margin: 40px;
+}
+@media only screen and (max-width: 1024px) {
+    .content{
+        width: 150px;
+    }
+    .tr{
+        margin-top: -10px;
+        margin-left: 143px;
+    }
+    .bl{
+        margin-top: 170px;
+        margin-left: 143px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content{
+        width: 250px;
+        margin-bottom: 50px;
+    }
+    .content-holder{
+        flex-direction: row;
+        flex-flow: row wrap;
+        align-content: flex-end;
+    }
+    .tr{
+        margin-left: 243px;
+    }
+    .bl{
+        margin-left: 243px;
+    }
+}
