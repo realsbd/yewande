@@ -69,24 +69,30 @@
     min-height: 170px;
     width: 200px;
     margin:  auto;
+    /* padding-bottom: 20px; */
     padding: 5px;
+    justify-content: center
 }
 .home{
     border: var(--home-color) 2px solid;
 }
 .learning{
-    border: var(--learning-color) 2px solid
+    border: var(--learning-color) 2px solid;
+    color: var(--learning-color);
 }
 .admin{
-    border: var(--admin-color) 2px solid
+    border: var(--admin-color) 2px solid;
+    color: var(--admin-color);
 }
 .blog{
-    border: var(--blog-color) 2px solid
+    border: var(--blog-color) 2px solid;
+    color: var(--blog-color);
 }
 h2, p {
     text-align: center;
     font-size: .9em;
     margin-top: 20px;
+    line-height: 1.5rem
 }
 svg{
     width: 50px;
@@ -103,10 +109,14 @@ svg{
     width: 30%
 }
 .svg-admin{
-    fill: var(--admin-color)
+    display: block;
+    margin: auto;
+    width: 20%;
 }
 .svg-blog{
-    fill: var(--blog-color)
+    display: block;
+    margin: auto;
+    width: 20%;
 }
 
 body{
